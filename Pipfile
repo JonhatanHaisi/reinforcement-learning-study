@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu124"
+verify_ssl = true
+name = "pytorch"
+
+[packages]
+jupyterlab = "*"
+torch = {version = "*", index = "pytorch"}
+numpy = "*"
+gymnasium = {extras = ["classic-control"], version = "*"}
+matplotlib = "*"
+moviepy = "*"
+ffmpeg = "*"
+tensorboard = "*"
+tensorboardx = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
+
+[scripts]
+notebook = "jupyter lab --NotebookApp.token='local'"
