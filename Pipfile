@@ -23,6 +23,3 @@ tensorboardx = "*"
 
 [requires]
 python_version = "3.12"
-
-[scripts]
-notebook = "jupyter lab --NotebookApp.token='local'"
